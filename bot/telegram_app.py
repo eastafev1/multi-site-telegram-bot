@@ -128,12 +128,44 @@ class NazarTelegramBot:
             )
 
             if notify and not diff.first_sync:
+                # Safety confirmation fetch to avoid transient/phantom notifications.
+                candidates = [*diff.newly_available, *diff.new_products_available]
+                confirmed_map: dict[int, Product] = {}
+                if candidates:
+                    try:
+                        confirmed_products = await service.fetch_products()
+                        confirmed_map = {int(p.id): p for p in confirmed_products if p.is_available}
+                    except Exception as exc:
+                        LOGGER.warning(
+                            "%s confirmation fetch failed; skip notify this cycle to avoid phantom alerts: %s",
+                            site_key,
+                            exc,
+                        )
+                        return diff
+
                 for product in diff.newly_available:
+                    confirmed = confirmed_map.get(int(product.id))
+                    if not confirmed:
+                        LOGGER.warning(
+                            "%s skip notify (not confirmed on second fetch) | event=0->1 | product_id=%s",
+                            site_key,
+                            product.id,
+                        )
+                        continue
                     LOGGER.info("%s found availability 0->1 | product_id=%s", site_key, product.id)
-                    await self._send_product(product, reason="Available changed: 0 -> 1", site_key=site_key)
+                    await self._send_product(confirmed, reason="Available changed: 0 -> 1", site_key=site_key)
+
                 for product in diff.new_products_available:
+                    confirmed = confirmed_map.get(int(product.id))
+                    if not confirmed:
+                        LOGGER.warning(
+                            "%s skip notify (not confirmed on second fetch) | event=new_available | product_id=%s",
+                            site_key,
+                            product.id,
+                        )
+                        continue
                     LOGGER.info("%s found new available product | product_id=%s", site_key, product.id)
-                    await self._send_product(product, reason="New product with Available = 1", site_key=site_key)
+                    await self._send_product(confirmed, reason="New product with Available = 1", site_key=site_key)
             elif diff.first_sync:
                 LOGGER.info("%s first run: silent state sync complete | known=%s", site_key, diff.known_products)
             return diff
