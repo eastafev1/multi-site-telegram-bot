@@ -48,6 +48,7 @@ class Settings:
     amazstar_check_interval_sec: int
     amazstar_products_page_size: int
     amazstar_run_mode: str
+    nazar_trace_product_id: int
 
 
 def load_settings(env_file: str = "config.env") -> Settings:
@@ -81,4 +82,5 @@ def load_settings(env_file: str = "config.env") -> Settings:
         amazstar_check_interval_sec=_as_int(os.getenv("AMAZSTAR_CHECK_INTERVAL_SEC"), 5),
         amazstar_products_page_size=_as_int(os.getenv("AMAZSTAR_PRODUCTS_PAGE_SIZE"), 500),
         amazstar_run_mode=os.getenv("AMAZSTAR_RUN_MODE", "auto").strip().lower(),
+        nazar_trace_product_id=_as_int(os.getenv("NAZAR_TRACE_PRODUCT_ID"), 0),
     )

@@ -1,10 +1,13 @@
 from __future__ import annotations
 
 import json
+import logging
 from dataclasses import dataclass
 from pathlib import Path
 
 from bot.models import Product
+
+LOGGER = logging.getLogger("bot.state_store")
 
 
 @dataclass(slots=True)
@@ -16,8 +19,9 @@ class ScanDiff:
 
 
 class StateStore:
-    def __init__(self, path: Path):
+    def __init__(self, path: Path, trace_product_id: int = 0):
         self.path = path
+        self.trace_product_id = int(trace_product_id or 0)
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self._state = self._load()
 
@@ -61,12 +65,29 @@ class StateStore:
 
         newly_available: list[Product] = []
         new_products_available: list[Product] = []
-        next_map: dict[str, int] = {}
+        current_map: dict[str, int] = {}
+        # Keep historical IDs in state to avoid repeated "new product" alerts
+        # when transient items disappear/reappear between scans.
+        updated_map: dict[str, int] = dict(previous)
+        trace_pid = str(self.trace_product_id) if self.trace_product_id and site_key == "nazar" else ""
 
         for product in products:
             pid = str(product.id)
-            next_map[pid] = int(product.available)
+            current_map[pid] = int(product.available)
+            updated_map[pid] = int(product.available)
             old_value = previous.get(pid)
+
+            if trace_pid and pid == trace_pid:
+                LOGGER.warning(
+                    "trace product in process_scan | site=%s | pid=%s | old_value=%s | new_value=%s | initialized=%s | name=%s | shop=%s",
+                    site_key,
+                    pid,
+                    old_value,
+                    product.available,
+                    initialized,
+                    product.name,
+                    product.shop,
+                )
 
             if old_value is None:
                 if product.is_available and initialized:
@@ -76,7 +97,22 @@ class StateStore:
             if old_value <= 0 and product.available > 0 and initialized:
                 newly_available.append(product)
 
-        site_state["availability"] = next_map
+        if trace_pid:
+            in_previous = trace_pid in previous
+            in_current = trace_pid in current_map
+            in_updated = trace_pid in updated_map
+            LOGGER.warning(
+                "trace product state decision | site=%s | pid=%s | in_previous=%s | in_current=%s | in_saved_map=%s | previous_value=%s | current_value=%s",
+                site_key,
+                trace_pid,
+                in_previous,
+                in_current,
+                in_updated,
+                previous.get(trace_pid),
+                current_map.get(trace_pid),
+            )
+
+        site_state["availability"] = updated_map
         if not initialized:
             site_state["initialized"] = True
         self._save()
@@ -85,5 +121,5 @@ class StateStore:
             first_sync=not initialized,
             newly_available=newly_available,
             new_products_available=new_products_available,
-            known_products=len(next_map),
+            known_products=len(current_map),
         )

@@ -41,8 +41,9 @@ class NazarTelegramBot:
             "nazar": settings.scan_interval_sec,
             "amazstar": settings.amazstar_check_interval_sec,
         }
+        self.trace_product_id = int(settings.nazar_trace_product_id or 0)
 
-        self.state = StateStore(settings.state_file)
+        self.state = StateStore(settings.state_file, trace_product_id=self.trace_product_id)
         self.application = (
             Application.builder()
             .token(settings.telegram_bot_token)
@@ -119,6 +120,21 @@ class NazarTelegramBot:
         async with self._scan_locks[site_key]:
             products = await service.fetch_products()
             self._last_products[site_key] = products
+            if site_key == "nazar" and self.trace_product_id:
+                traced = next((p for p in products if int(p.id) == self.trace_product_id), None)
+                if traced:
+                    LOGGER.warning(
+                        "trace product first fetch | pid=%s | available=%s | daily=%s | total=%s | shop=%s | manager=%s | name=%s",
+                        traced.id,
+                        traced.available,
+                        traced.daily,
+                        traced.total,
+                        traced.shop,
+                        traced.manager,
+                        traced.name,
+                    )
+                else:
+                    LOGGER.warning("trace product first fetch missing | pid=%s", self.trace_product_id)
             diff = self.state.process_scan(products, site_key=site_key)
             self._last_scan_at[site_key] = datetime.now(timezone.utc)
             self._last_scan_summary[site_key] = (
@@ -130,11 +146,38 @@ class NazarTelegramBot:
             if notify and not diff.first_sync:
                 # Safety confirmation fetch to avoid transient/phantom notifications.
                 candidates = [*diff.newly_available, *diff.new_products_available]
+                if site_key == "nazar" and self.trace_product_id:
+                    trace_in_candidates = [
+                        p for p in candidates if int(p.id) == self.trace_product_id
+                    ]
+                    if trace_in_candidates:
+                        for p in trace_in_candidates:
+                            LOGGER.warning(
+                                "trace product candidate | pid=%s | available=%s | event=%s",
+                                p.id,
+                                p.available,
+                                "new_available" if p in diff.new_products_available else "0->1",
+                            )
                 confirmed_map: dict[int, Product] = {}
                 if candidates:
                     try:
                         confirmed_products = await service.fetch_products()
                         confirmed_map = {int(p.id): p for p in confirmed_products if p.is_available}
+                        if site_key == "nazar" and self.trace_product_id:
+                            confirmed = confirmed_map.get(self.trace_product_id)
+                            if confirmed:
+                                LOGGER.warning(
+                                    "trace product confirmation fetch present | pid=%s | available=%s | daily=%s | total=%s",
+                                    confirmed.id,
+                                    confirmed.available,
+                                    confirmed.daily,
+                                    confirmed.total,
+                                )
+                            else:
+                                LOGGER.warning(
+                                    "trace product confirmation fetch missing/non-available | pid=%s",
+                                    self.trace_product_id,
+                                )
                     except Exception as exc:
                         LOGGER.warning(
                             "%s confirmation fetch failed; skip notify this cycle to avoid phantom alerts: %s",

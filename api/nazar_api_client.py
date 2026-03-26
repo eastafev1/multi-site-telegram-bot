@@ -30,6 +30,7 @@ class NazarApiClient:
         )
         self._csrf_token: str | None = None
         self._logged_in = False
+        self._trace_product_id = int(settings.nazar_trace_product_id or 0)
 
     async def close(self) -> None:
         await self._client.aclose()
@@ -97,15 +98,43 @@ class NazarApiClient:
         await self.login()
 
     @staticmethod
-    def _parse_products(payload_text: str, country: str) -> tuple[list[Product], int]:
+    def _row_product_id(row: list[Any], default_country: str) -> int:
+        if not row:
+            return 0
+        offset = 0
+        if isinstance(row[0], str) and len(row) >= 16 and row[0].lower() == default_country.lower():
+            offset = 1
+        try:
+            return int(row[offset + 0])
+        except Exception:
+            return 0
+
+    def _parse_products(self, payload_text: str, country: str) -> tuple[list[Product], int]:
         parsed = json.loads(payload_text)
         rows = parsed.get("data") or []
         total = int(parsed.get("recordsFiltered") or parsed.get("recordsTotal") or 0)
         products: list[Product] = []
         for row in rows:
+            raw_pid = self._row_product_id(row, country)
+            if self._trace_product_id and raw_pid == self._trace_product_id:
+                LOGGER.warning("trace product raw payload row | pid=%s | row=%s", raw_pid, row)
             try:
-                products.append(Product.from_row(row, default_country=country))
-            except Exception:
+                product = Product.from_row(row, default_country=country)
+                products.append(product)
+                if self._trace_product_id and int(product.id) == self._trace_product_id:
+                    LOGGER.warning(
+                        "trace product parsed object | pid=%s | available=%s | daily=%s | total=%s | shop=%s | manager=%s | name=%s",
+                        product.id,
+                        product.available,
+                        product.daily,
+                        product.total,
+                        product.shop,
+                        product.manager,
+                        product.name,
+                    )
+            except Exception as exc:
+                if self._trace_product_id and raw_pid == self._trace_product_id:
+                    LOGGER.warning("trace product parse failure | pid=%s | error=%s | row=%s", raw_pid, exc, row)
                 continue
         return products, total
 
@@ -133,6 +162,16 @@ class NazarApiClient:
                     )
                     response.raise_for_status()
                     page_products, reported_total = self._parse_products(response.text, country=country)
+                    if self._trace_product_id:
+                        traced = next((p for p in page_products if int(p.id) == self._trace_product_id), None)
+                        if traced:
+                            LOGGER.warning(
+                                "trace product in fetch page | pid=%s | page_start=%s | draw=%s | available=%s",
+                                traced.id,
+                                start,
+                                draw,
+                                traced.available,
+                            )
                     if draw == 1:
                         total_expected = reported_total
                     if not page_products:
