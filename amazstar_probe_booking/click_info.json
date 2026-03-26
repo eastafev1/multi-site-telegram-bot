@@ -1,0 +1,10 @@
+{
+  "book_found": true,
+  "proceed_found": true,
+  "clicked_proceed": true,
+  "book_id": "book_65504",
+  "modal_visible": true,
+  "proceed_selector": "#bookingModal button:has-text(\"Book\")",
+  "proceed_text": "BOOK",
+  "booking_modal_html": "<div class=\"modal-dialog modal-dialog-scrollable\" role=\"document\"> <div class=\"modal-content\"> <div class=\"center overlay\"> <i style=\"position:relative;top:36%;\" class=\"fas fa-3x fa-sync-alt fa-spin\"></i> </div> <div class=\"modal-header\"> <h4 class=\"modal-title center\"></h4> <button type=\"button\" class=\"close\" data-dismiss=\"modal\">×</button> </div> <div class=\"modal-body\"> </div> <div class=\"modal-footer\"> </div> </div> </div>"
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "XSRF-TOKEN",
+    "value": "eyJpdiI6ImRmTXc1a3BFSzBPMFFCd0NFbzM2N1E9PSIsInZhbHVlIjoieXpnL3BWa1FsU3BMK1BJdjRqaVY1Mmgva2MrV1VrS1JxUE5FRDFZTVNhTHpoeFQwbDVYOEw5Q3F2RVcwNS8zc3NWanVvVHVFeWoxOTc4UkpGdFpUTnRZUWZ1eGdRKzU2WUk3QWZqYllDaERYWTZlamQwWVV4K0JJd1lxZnNxSzEiLCJtYWMiOiI1MTFmODY3Zjc3ZTc0NjAzMmU3M2EzYWJkYjRkMDdiMWRlNGRkMzJlMDI2ZDE1YTFmMDc2OWI3NDY3YTRjMDk1IiwidGFnIjoiIn0%3D",
+    "domain": "nazar.gift",
+    "path": "/",
+    "expires": 1774527853.976399,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "nazar_session",
+    "value": "eyJpdiI6ImtVN0doVklHeS9HOW5YZXBrUy9sMGc9PSIsInZhbHVlIjoieUZJUmowajlGeU1Sd0JyMnYzbVY1SHM5UjN0ay82eS9zNnBrRTdTQW81ckZRV0Z5VXNOVTRRck5LSDg2MTVuUDNSNmJSTWR1WVZMOTZ4Z1BMSjJCNzQzTDFVdU92V3BKdWRjMXd2MW9rMHVaV3dwb0pYdEIvajRBLy9vU2pNVnkiLCJtYWMiOiJlY2M5MzMwMzY1MmE3YTQ0NGNhZmIyNDFiYTMzZjZmOWQyZjNjYmVlMjAzMjBjMTZmMjkwZjc5MmYyYTkyM2Q1IiwidGFnIjoiIn0%3D",
+    "domain": "nazar.gift",
+    "path": "/",
+    "expires": 1774527853.976466,
+    "httpOnly": true,
+    "secure": false,
+    "sameSite": "Lax"
+  }
+]

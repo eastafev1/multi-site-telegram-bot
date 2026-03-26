@@ -1,0 +1,22 @@
+[
+  {
+    "name": "XSRF-TOKEN",
+    "value": "eyJpdiI6InVmNTB3UTd3TGcvZjlyVU5COHBFWVE9PSIsInZhbHVlIjoiRVJKbkNxTndrdkMyMkpxRWVkSUc5VFpzNlZ4VGlPandWYmdqY2pUa3l4cGJoT2ZuYm9YMkdzMzRleG1BWlJVWHR2ZHR1eEFhaG94NGNrVXcwaFdEenRDUkZGb2p3TEVtcTJaV3I4d0NJK20ya1VyWS9SWi9QWGUyUmh6Qk14Z3giLCJtYWMiOiJlN2I1NTdhNGI5OTkyYmI4ZmQwZGY3MmNlM2RjZjljYTE4NmIxMzNmMGNiNDBlNTVlNjdkODFmNzE5ZWFmMWE2IiwidGFnIjoiIn0%3D",
+    "domain": "amazstar.club",
+    "path": "/",
+    "expires": 1774532903.701146,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "amazstar_session",
+    "value": "eyJpdiI6Iml0VGZqd0IxeWhzbDEvQ3RwQVlsVVE9PSIsInZhbHVlIjoiRENLY0V3YmdiS29uSE0rd1lXQXN6bm9sRHFOK1pGWEFXeEV3WlVxbXRrQWppS0FxK3E1bEZycTlNVUQ1QlJlL3JzQXNZcVJ0K3pYUDB4K3R4THRZcEtGQ2Nha29YTWVZSTF3Y0pYN2RXTW5WakxYaVp0UFh5OW85clEzZmxCd3ciLCJtYWMiOiI5YmUxM2JmMDFiNzBkY2U3MzExM2U0N2M5YzEwMWE1NjY2ZTVjOTdiZWFjMWEzNjA0N2NkODdlMDdkZjY0ZTRhIiwidGFnIjoiIn0%3D",
+    "domain": "amazstar.club",
+    "path": "/",
+    "expires": 1774532903.701425,
+    "httpOnly": true,
+    "secure": false,
+    "sameSite": "Lax"
+  }
+]

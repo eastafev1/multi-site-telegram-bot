@@ -1,0 +1,244 @@
+[
+  {
+    "kind": "req",
+    "url": "https://amazstar.club/getProducts",
+    "method": "POST",
+    "resource_type": "xhr",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "x-csrf-token": "SDBpvbOtxd5IpwW8GChoB2JgDApEONla6RfRJutl",
+      "referer": "https://amazstar.club/",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"HeadlessChrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/145.0.7632.6 Safari/537.36",
+      "accept": "application/json, text/javascript, */*; q=0.01",
+      "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+    },
+    "post_data": "draw=1&columns%5B0%5D%5Bdata%5D=0&columns%5B0%5D%5Bname%5D=col_country&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=true&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=1&columns%5B1%5D%5Bname%5D=col_state&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=false&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=2&columns%5B2%5D%5Bname%5D=col_book_order&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=false&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=3&columns%5B3%5D%5Bname%5D=col_id&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=4&columns%5B4%5D%5Bname%5D=col_name&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=true&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=5&columns%5B5%5D%5Bname%5D=col_image&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=false&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=6&columns%5B6%5D%5Bname%5D=col_link&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=false&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=7&columns%5B7%5D%5Bname%5D=col_seller_shop&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=8&columns%5B8%5D%5Bname%5D=col_manager&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=9&columns%5B9%5D%5Bname%5D=col_total&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B10%5D%5Bdata%5D=10&columns%5B10%5D%5Bname%5D=col_daily&columns%5B10%5D%5Bsearchable%5D=true&columns%5B10%5D%5Borderable%5D=true&columns%5B10%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B10%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B11%5D%5Bdata%5D=11&columns%5B11%5D%5Bname%5D=col_available&columns%5B11%5D%5Bsearchable%5D=true&columns%5B11%5D%5Borderable%5D=false&columns%5B11%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B11%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B12%5D%5Bdata%5D=12&columns%5B12%5D%5Bname%5D=col_paypal_fee&columns%5B12%5D%5Bsearchable%5D=true&columns%5B12%5D%5Borderable%5D=true&columns%5B12%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B12%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B13%5D%5Bdata%5D=13&columns%5B13%5D%5Bname%5D=col_review_type&columns%5B13%5D%5Bsearchable%5D=true&columns%5B13%5D%5Borderable%5D=true&columns%5B13%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B13%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B14%5D%5Bdata%5D=14&columns%5B14%5D%5Bname%5D=col_feedback&columns%5B14%5D%5Bsearchable%5D=true&columns%5B14%5D%5Borderable%5D=true&columns%5B14%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B14%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B15%5D%5Bdata%5D=15&columns%5B15%5D%5Bname%5D=col_perc_refund&columns%5B15%5D%5Bsearchable%5D=true&columns%5B15%5D%5Borderable%5D=false&columns%5B15%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B15%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B16%5D%5Bdata%5D=16&columns%5B16%5D%5Bname%5D=col_note&columns%5B16%5D%5Bsearchable%5D=true&columns%5B16%5D%5Borderable%5D=true&columns%5B16%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B16%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B17%5D%5Bdata%5D=17&columns%5B17%5D%5Bname%5D=col_agent_comm&columns%5B17%5D%5Bsearchable%5D=true&columns%5B17%5D%5Borderable%5D=false&columns%5B17%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B17%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=3&order%5B0%5D%5Bdir%5D=desc&start=0&length=50&search%5Bvalue%5D=&search%5Bregex%5D=false&filter=&all_countries=true&country=all&seller_id="
+  },
+  {
+    "kind": "resp",
+    "url": "https://amazstar.club/getProducts",
+    "status": 200,
+    "headers": {
+      "x-robots-tag": "noindex, nofollow",
+      "cache-control": "no-cache, private",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "zstd",
+      "cf-cache-status": "DYNAMIC",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=MSOK9%2BwZDnqkyT8w921nk1V%2BivcZ1SevasOG1s7Bz1mzO0CiH1nOzBdoWI%2Fuk%2BDX26pc1kpblxlmgMvAA96p0Yj0gpb5d%2F9epTMxsn8%2Bf6mL%2FLZReh9P%2Fjo%2BjzskW9yl\"}]}",
+      "cf-ray": "9e25ee9e3df3cfd3-MAD",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "date": "Thu, 26 Mar 2026 11:49:28 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "vary": "Accept-Encoding",
+      "server": "cloudflare"
+    },
+    "body_snippet": "{\"draw\":1,\"recordsTotal\":532,\"recordsFiltered\":532,\"data\":[[\"it\",0,1,65507,\"Luregirl Auricolari in-ear\",\"\\/storage\\/product_images\\/B0GSVJ37CT_1774508069.jpg\",\"https:\\/\\/www.amazon.it\\/dp\\/B0GSVJ37CT\\/?tag=amadanynuovo-21\",\"farenkeji\",\"Dany\",2,2,2,1,\"Review\",\"no\",\"-\",\"\",1,0],[\"fr\",0,1,65506,\"Luregirl \\u00c9couteurs intra-auriculaires\",\"\\/storage\\/product_images\\/B0GSVJ37CT_1774508025.jpg\",\"https:\\/\\/www.amazon.fr\\/dp\\/B0GSVJ37CT\\/?tag=danyliss017-21\",\"farenkeji\",\"Dany\",2,2,2,1,\"Review\",\"no\",\"-\",\"\",1,0],[\"de\",0,1,65505,\"Luregirl In-Ear Kopfh\\u00f6rer f\\u00fcr iPhone\",\"\\/storage\\/product_images\\/B0GSVJ37CT_1774507867.jpg\",\"https:\\/\\/www.amazon.de\\/dp\\/B0GSVJ37CT\\/?tag=danyliss0d-21\",\"farenkeji\",\"Dany\",2,2,2,1,\"Review\",\"no\",\"-\",\"\",1,0],[\"es\",0,1,65504,\"Luregirl Auriculares in-ear\",\"\\/storage\\/product_images\\/B0GSVJ37CT_1774507815.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0GSVJ37CT\\/?tag=danyliss07-21\",\"farenkeji\",\"Dany\",2,2,2,1,\"Review\",\"no\",\"-\",\"\",1,0],[\"de\",0,1,65503,\"inhalierger\\u00e4te f\\u00fcr erwachsene\",\"\\/storage\\/product_images\\/B0GLHYKWQ9_1774502296.jpg\",\"https:\\/\\/www.amazon.de\\/dp\\/B0GLHYKWQ9\\/?tag=danyliss0d-21\",\"XiRudianpu\",\"Dany\",1,1,1,1,\"Review\",\"no\",\"-\",\"\",1,0],[\"de\",0,1,65502,\"inhalationsger\\u00e4t\",\"\\/storage\\/product_images\\/B0CGDG26B1_1774502127.jpg\",\"https:\\/\\/www.amazon.de\\/dp\\/B0CGDG26B1\\/?tag=danyliss0d-21\",\"guangzhouhuanxiadianzishangwuyouxiangongsi\",\"Dany\",1,1,1,1,\"Review\",\"no\",\"-\",\"\",1,0],[\"de\",0,1,65501,\"Alkoholtester Polizeigenau\",\"\\/storage\\/product_images\\/B0FXLG8YKY_1774501516.jpg\",\"https:\\/\\/www.amazon.de\\/dp\\/B0FXLG8YKY\\/?tag=danyliss0d-21\",\"ROT FEELS, SOCIEDAD LIMITADA\",\"Dany\",11,1,1,1,\"Review\",\"no\",\"-\",\"\",1,0],[\"es\",0,1,65500,\"Keywords: camara de video\",\"\\/storage\\/product_images\\/B0G8F34DSP_1774472137.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0G8F34DSP\\/?tag=danyliss07-21\",\"CAMWORLD Ufficiale ES\",\"Federica\",2,1,0,1,\"Review\",\"ask\",\"-\",\"No new account. No gift cards. REVIEW ONLY TEXT.\",1,0],[\"es\",0,1,65499,\"pista coches flexible\",\"\\/storage\\/product_images\\/B0FSWLQSZW_1774472029.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0FSWLQSZW\\/?tag=danyliss07-21\",\"YIMASI-EU STORE\",\"Federica\",1,2,0,1,\"Review\",\"ask\",\"-\",\"No new account. No gift cards.\",1,0],[\"it\",0,1,65498,\"hot wheels pista\",\"\\/storage\\/product_images\\/B0FSWLQSZW_1774472029.jpg\",\"https:\\/\\/www.amazon.it\\/dp\\/B0FSWLQSZW\\/?tag=amadanynuovo-21\",\"YIMASI-EU STORE\",\"Federica\",3,2,0,1,\"Review\",\"ask\",\"-\",\"no nuovo profilo. no gift cards.\",1,0],[\"fr\",0,1,65497,\"circuit cars\",\"\\/storage\\/product_ima"
+  },
+  {
+    "kind": "req",
+    "url": "https://amazstar.club/products?country=es",
+    "method": "GET",
+    "resource_type": "document",
+    "headers": {
+      "upgrade-insecure-requests": "1",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/145.0.7632.6 Safari/537.36",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"HeadlessChrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\""
+    },
+    "post_data": null
+  },
+  {
+    "kind": "req",
+    "url": "https://amazstar.club/getProducts",
+    "method": "POST",
+    "resource_type": "xhr",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "x-csrf-token": "SDBpvbOtxd5IpwW8GChoB2JgDApEONla6RfRJutl",
+      "referer": "https://amazstar.club/products?country=es",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"HeadlessChrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/145.0.7632.6 Safari/537.36",
+      "accept": "application/json, text/javascript, */*; q=0.01",
+      "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+    },
+    "post_data": "draw=1&columns%5B0%5D%5Bdata%5D=0&columns%5B0%5D%5Bname%5D=col_state&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=false&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=1&columns%5B1%5D%5Bname%5D=col_book_order&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=false&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=2&columns%5B2%5D%5Bname%5D=col_id&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=3&columns%5B3%5D%5Bname%5D=col_name&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=4&columns%5B4%5D%5Bname%5D=col_image&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=false&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=5&columns%5B5%5D%5Bname%5D=col_link&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=false&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=6&columns%5B6%5D%5Bname%5D=col_seller_shop&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=7&columns%5B7%5D%5Bname%5D=col_manager&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=8&columns%5B8%5D%5Bname%5D=col_total&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=9&columns%5B9%5D%5Bname%5D=col_daily&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B10%5D%5Bdata%5D=10&columns%5B10%5D%5Bname%5D=col_available&columns%5B10%5D%5Bsearchable%5D=true&columns%5B10%5D%5Borderable%5D=false&columns%5B10%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B10%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B11%5D%5Bdata%5D=11&columns%5B11%5D%5Bname%5D=col_paypal_fee&columns%5B11%5D%5Bsearchable%5D=true&columns%5B11%5D%5Borderable%5D=true&columns%5B11%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B11%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B12%5D%5Bdata%5D=12&columns%5B12%5D%5Bname%5D=col_review_type&columns%5B12%5D%5Bsearchable%5D=true&columns%5B12%5D%5Borderable%5D=true&columns%5B12%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B12%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B13%5D%5Bdata%5D=13&columns%5B13%5D%5Bname%5D=col_feedback&columns%5B13%5D%5Bsearchable%5D=true&columns%5B13%5D%5Borderable%5D=true&columns%5B13%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B13%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B14%5D%5Bdata%5D=14&columns%5B14%5D%5Bname%5D=col_perc_refund&columns%5B14%5D%5Bsearchable%5D=true&columns%5B14%5D%5Borderable%5D=false&columns%5B14%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B14%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B15%5D%5Bdata%5D=15&columns%5B15%5D%5Bname%5D=col_note&columns%5B15%5D%5Bsearchable%5D=true&columns%5B15%5D%5Borderable%5D=true&columns%5B15%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B15%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B16%5D%5Bdata%5D=16&columns%5B16%5D%5Bname%5D=col_agent_comm&columns%5B16%5D%5Bsearchable%5D=true&columns%5B16%5D%5Borderable%5D=false&columns%5B16%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B16%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=2&order%5B0%5D%5Bdir%5D=desc&start=0&length=50&search%5Bvalue%5D=&search%5Bregex%5D=false&filter=&all_countries=false&country=es&seller_id="
+  },
+  {
+    "kind": "resp",
+    "url": "https://amazstar.club/getProducts",
+    "status": 200,
+    "headers": {
+      "x-robots-tag": "noindex, nofollow",
+      "cache-control": "no-cache, private",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "zstd",
+      "cf-cache-status": "DYNAMIC",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=5xwzagwJ8JbP9L6GGWxupKFvA7T%2BOxrkzs1XBRT2QiI3HWC1xBxrYNQyRWI%2FNHqwd8%2FRyRw2L02Jg3OgQbXt7fsbhFQoBetNNQ05OkhNmTg6ZvrRZrF0u1snbR71vQsq\"}]}",
+      "cf-ray": "9e25eea9fa07cfd3-MAD",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "date": "Thu, 26 Mar 2026 11:49:30 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "vary": "Accept-Encoding",
+      "server": "cloudflare"
+    },
+    "body_snippet": "{\"draw\":1,\"recordsTotal\":59,\"recordsFiltered\":59,\"data\":[[0,1,65504,\"Luregirl Auriculares in-ear\",\"\\/storage\\/product_images\\/B0GSVJ37CT_1774507815.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0GSVJ37CT\\/?tag=danyliss07-21\",\"farenkeji\",\"Dany\",2,2,2,1,\"Review\",\"no\",\"-\",\"\",1,0],[0,1,65500,\"Keywords: camara de video\",\"\\/storage\\/product_images\\/B0G8F34DSP_1774472137.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0G8F34DSP\\/?tag=danyliss07-21\",\"CAMWORLD Ufficiale ES\",\"Federica\",2,1,0,1,\"Review\",\"ask\",\"-\",\"No new account. No gift cards. REVIEW ONLY TEXT.\",1,0],[0,1,65499,\"pista coches flexible\",\"\\/storage\\/product_images\\/B0FSWLQSZW_1774472029.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0FSWLQSZW\\/?tag=danyliss07-21\",\"YIMASI-EU STORE\",\"Federica\",1,2,0,1,\"Review\",\"ask\",\"-\",\"No new account. No gift cards.\",1,0],[0,1,65485,\"Cordones de silicona para zapatos\",\"\\/storage\\/product_images\\/B0FZKKYHHF_1774377916.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0FZKKYHHF\\/?tag=danyliss07-21\",\"SIULEEYEUNGHOON\",\"Dany\",2,1,1,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65484,\"Cordones de silicona para zapatos\",\"\\/storage\\/product_images\\/B0FZKPQW9W_1774377911.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0FZKPQW9W\\/?tag=danyliss07-21\",\"SIULEEYEUNGHOON\",\"Dany\",2,1,1,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65479,\"repelente gatos ahuyentador para gatos\",\"\\/storage\\/product_images\\/B0FS1J4YZG_1774376954.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0FS1J4YZG\\/?tag=danyliss07-21\",\"\\\" LanZong-Mall\\\"\",\"Dany\",10,1,1,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65478,\"Repelente ultras\\u00f3nico de plagas para Interiores\",\"\\/storage\\/product_images\\/B0FS5PYDHM_1774376949.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0FS5PYDHM\\/?tag=danyliss07-21\",\"\\\" BaoBaiShop\\\"\",\"Dany\",10,1,1,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65477,\"repelente ultras\\u00f3nico de plagas\",\"\\/storage\\/product_images\\/B0G635JS73_1774376945.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0G635JS73\\/?tag=danyliss07-21\",\"LanZong-Mall\",\"Dany\",10,1,1,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65474,\"Lima de U\\u00f1as de Acero Inoxidable\",\"\\/storage\\/product_images\\/B0G1HLMTF8_1774375999.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0G1HLMTF8\\/?tag=danyliss07-21\",\"SOENANATURALSLTD\",\"Dany\",2,1,0,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65460,\"ONLY PURCHASE! Programador Riego Autom\\u00e1tico\",\"\\/storage\\/product_images\\/B0G3H3H4DX_1774374795.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0G3H3H4DX\\/?tag=danyliss07-21\",\"Muwei Trading Co., Ltd.\",\"Federica\",0,2,0,1,\"Purchase only\",\"-\",\"100%\",\"ONLY PURCHASE! send me photo when arrive the product. No giftcards.\",0.5,0],[0,1,6"
+  },
+  {
+    "kind": "req",
+    "url": "https://amazstar.club/getProducts",
+    "method": "POST",
+    "resource_type": "xhr",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "x-csrf-token": "SDBpvbOtxd5IpwW8GChoB2JgDApEONla6RfRJutl",
+      "referer": "https://amazstar.club/products?country=es",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"HeadlessChrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/145.0.7632.6 Safari/537.36",
+      "accept": "application/json, text/javascript, */*; q=0.01",
+      "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+    },
+    "post_data": "draw=2&columns%5B0%5D%5Bdata%5D=0&columns%5B0%5D%5Bname%5D=col_state&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=false&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=1&columns%5B1%5D%5Bname%5D=col_book_order&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=false&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=2&columns%5B2%5D%5Bname%5D=col_id&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=3&columns%5B3%5D%5Bname%5D=col_name&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=4&columns%5B4%5D%5Bname%5D=col_image&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=false&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=5&columns%5B5%5D%5Bname%5D=col_link&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=false&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=6&columns%5B6%5D%5Bname%5D=col_seller_shop&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=7&columns%5B7%5D%5Bname%5D=col_manager&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=8&columns%5B8%5D%5Bname%5D=col_total&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=9&columns%5B9%5D%5Bname%5D=col_daily&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B10%5D%5Bdata%5D=10&columns%5B10%5D%5Bname%5D=col_available&columns%5B10%5D%5Bsearchable%5D=true&columns%5B10%5D%5Borderable%5D=false&columns%5B10%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B10%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B11%5D%5Bdata%5D=11&columns%5B11%5D%5Bname%5D=col_paypal_fee&columns%5B11%5D%5Bsearchable%5D=true&columns%5B11%5D%5Borderable%5D=true&columns%5B11%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B11%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B12%5D%5Bdata%5D=12&columns%5B12%5D%5Bname%5D=col_review_type&columns%5B12%5D%5Bsearchable%5D=true&columns%5B12%5D%5Borderable%5D=true&columns%5B12%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B12%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B13%5D%5Bdata%5D=13&columns%5B13%5D%5Bname%5D=col_feedback&columns%5B13%5D%5Bsearchable%5D=true&columns%5B13%5D%5Borderable%5D=true&columns%5B13%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B13%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B14%5D%5Bdata%5D=14&columns%5B14%5D%5Bname%5D=col_perc_refund&columns%5B14%5D%5Bsearchable%5D=true&columns%5B14%5D%5Borderable%5D=false&columns%5B14%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B14%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B15%5D%5Bdata%5D=15&columns%5B15%5D%5Bname%5D=col_note&columns%5B15%5D%5Bsearchable%5D=true&columns%5B15%5D%5Borderable%5D=true&columns%5B15%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B15%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B16%5D%5Bdata%5D=16&columns%5B16%5D%5Bname%5D=col_agent_comm&columns%5B16%5D%5Bsearchable%5D=true&columns%5B16%5D%5Borderable%5D=false&columns%5B16%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B16%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=2&order%5B0%5D%5Bdir%5D=desc&start=0&length=500&search%5Bvalue%5D=&search%5Bregex%5D=false&filter=&all_countries=false&country=es&seller_id="
+  },
+  {
+    "kind": "resp",
+    "url": "https://amazstar.club/getProducts",
+    "status": 200,
+    "headers": {
+      "x-robots-tag": "noindex, nofollow",
+      "cache-control": "no-cache, private",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "zstd",
+      "cf-cache-status": "DYNAMIC",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=hClpLbmI%2BEwleOBsd%2BhAkFyX8Vtfj0NJ5gfqS7hJHnYZjVRUsVvowHDk2zmtRk1q8lckQVs%2F4Xd5%2BhGSxK1Sno0pdBS%2BRuuUZz3Zev2Dm1OTJTA7GEl6tsiKca3Gfz%2Fw\"}]}",
+      "cf-ray": "9e25eec00847cfd3-MAD",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "date": "Thu, 26 Mar 2026 11:49:33 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "vary": "Accept-Encoding",
+      "server": "cloudflare"
+    },
+    "body_snippet": "{\"draw\":2,\"recordsTotal\":59,\"recordsFiltered\":59,\"data\":[[0,1,65504,\"Luregirl Auriculares in-ear\",\"\\/storage\\/product_images\\/B0GSVJ37CT_1774507815.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0GSVJ37CT\\/?tag=danyliss07-21\",\"farenkeji\",\"Dany\",2,2,2,1,\"Review\",\"no\",\"-\",\"\",1,0],[0,1,65500,\"Keywords: camara de video\",\"\\/storage\\/product_images\\/B0G8F34DSP_1774472137.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0G8F34DSP\\/?tag=danyliss07-21\",\"CAMWORLD Ufficiale ES\",\"Federica\",2,1,0,1,\"Review\",\"ask\",\"-\",\"No new account. No gift cards. REVIEW ONLY TEXT.\",1,0],[0,1,65499,\"pista coches flexible\",\"\\/storage\\/product_images\\/B0FSWLQSZW_1774472029.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0FSWLQSZW\\/?tag=danyliss07-21\",\"YIMASI-EU STORE\",\"Federica\",1,2,0,1,\"Review\",\"ask\",\"-\",\"No new account. No gift cards.\",1,0],[0,1,65485,\"Cordones de silicona para zapatos\",\"\\/storage\\/product_images\\/B0FZKKYHHF_1774377916.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0FZKKYHHF\\/?tag=danyliss07-21\",\"SIULEEYEUNGHOON\",\"Dany\",2,1,1,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65484,\"Cordones de silicona para zapatos\",\"\\/storage\\/product_images\\/B0FZKPQW9W_1774377911.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0FZKPQW9W\\/?tag=danyliss07-21\",\"SIULEEYEUNGHOON\",\"Dany\",2,1,1,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65479,\"repelente gatos ahuyentador para gatos\",\"\\/storage\\/product_images\\/B0FS1J4YZG_1774376954.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0FS1J4YZG\\/?tag=danyliss07-21\",\"\\\" LanZong-Mall\\\"\",\"Dany\",10,1,1,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65478,\"Repelente ultras\\u00f3nico de plagas para Interiores\",\"\\/storage\\/product_images\\/B0FS5PYDHM_1774376949.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0FS5PYDHM\\/?tag=danyliss07-21\",\"\\\" BaoBaiShop\\\"\",\"Dany\",10,1,1,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65477,\"repelente ultras\\u00f3nico de plagas\",\"\\/storage\\/product_images\\/B0G635JS73_1774376945.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0G635JS73\\/?tag=danyliss07-21\",\"LanZong-Mall\",\"Dany\",10,1,1,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65474,\"Lima de U\\u00f1as de Acero Inoxidable\",\"\\/storage\\/product_images\\/B0G1HLMTF8_1774375999.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0G1HLMTF8\\/?tag=danyliss07-21\",\"SOENANATURALSLTD\",\"Dany\",2,1,0,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65460,\"ONLY PURCHASE! Programador Riego Autom\\u00e1tico\",\"\\/storage\\/product_images\\/B0G3H3H4DX_1774374795.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0G3H3H4DX\\/?tag=danyliss07-21\",\"Muwei Trading Co., Ltd.\",\"Federica\",0,2,0,1,\"Purchase only\",\"-\",\"100%\",\"ONLY PURCHASE! send me photo when arrive the product. No giftcards.\",0.5,0],[0,1,6"
+  },
+  {
+    "kind": "req",
+    "url": "https://amazstar.club/booking",
+    "method": "POST",
+    "resource_type": "xhr",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "x-csrf-token": "SDBpvbOtxd5IpwW8GChoB2JgDApEONla6RfRJutl",
+      "referer": "https://amazstar.club/products?country=es",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"HeadlessChrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/145.0.7632.6 Safari/537.36",
+      "accept": "*/*",
+      "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+    },
+    "post_data": "prod_id=65504"
+  },
+  {
+    "kind": "resp",
+    "url": "https://amazstar.club/booking",
+    "status": 200,
+    "headers": {
+      "x-robots-tag": "noindex, nofollow",
+      "cache-control": "no-cache, private",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "zstd",
+      "cf-cache-status": "DYNAMIC",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=U%2BqosfYw81wRzJ%2BR4kJJF8nnT7f79QUBI6898lETPwysLvib5kyEe3K8qciLocAT%2BP2j8SfMYbcJqay5oIYE%2FfeMWILh4yTl6kWdxRABQ%2FTUeTqjeSZPSfjg3xkAvWQS\"}]}",
+      "cf-ray": "9e25eeccbbd6cfd3-MAD",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "date": "Thu, 26 Mar 2026 11:49:34 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "vary": "Accept-Encoding",
+      "server": "cloudflare"
+    },
+    "body_snippet": "<div class=\"modal-dialog modal-dialog-scrollable\" role=\"document\">\n    <div class=\"modal-content\">\n        <div class=\"modal-header\">\n            <h4 class=\"modal-title center\">Product Booking</h4>\n            <button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button>\n        </div>\n                    <div class=\"modal-body\">\n                <p class=\"center font-weight-bold\">Are you sure you want to book this product?</p>\n                <p class=\"center\">You must order it within 30 minutes!</p>\n                                <div class=\"form-group center\">\n                    <label for=\"product_id\" style=\"margin-right:20px;\">Product ID </label>\n                    <input class=\"col-md-4 center form-control form-textbox\" readonly=\"\" style=\"display:inline;\" name=\"product_id\" type=\"text\" value=\"65504\" id=\"product_id\">\n                </div>\n            </div>\n            <div class=\"modal-footer\">\n                <button type=\"button\" class=\"center btn btn-default\" data-dismiss=\"modal\">Cancel</button>\n                <button id=\"book_product_submit\" class=\"center btn btn-primary\" type=\"button\">\n                    <span style=\"display:none;\" class=\"spinner-border spinner-border-sm\" role=\"status\" aria-hidden=\"true\"></span>\n                    BOOK\n                </button>\n            </div>\n            </div>\n</div>\n\n<script>\n    async function selectAgain(table_name, order_ids, col_index, col_to_click) {\n        while ($('img#loading_dt_img').parent().attr('style') == 'display: block;') {\n            await sleep(100);\n        }\n\n        col_index = getColumnIndex(col_index);\n        col_to_click = getColumnIndex(col_to_click);\n\n        $(`table#${table_name} > tbody > tr`).each(function(i, e) {\n            let order_id = e.children[col_index].innerText;\n\n            if (order_ids.includes(order_id)) {\n                $(`table#${table_name} > tbody > tr:nth-child(${i+1}) > td:nth-child(${col_to_click+1})`).click();\n            }\n        });\n    }\n\n    function getSelectedIDs(table_name, col) {\n        let selected = $(`table#${table_name} > tbody > tr.selected`).length > 0 ? true : false;\n\n        product_ids = [];\n\n        if (selected) {\n            id_col_index = getColumnIndex(col);\n\n            $(`table#${table_name} > tbody > tr.selected`).each(function(i, e) {\n                let product_id = e.children[id_col_index].innerText;\n\n                product_ids.push(product_id);\n            });\n        }\n\n        return product_ids;\n    "
+  },
+  {
+    "kind": "req",
+    "url": "https://amazstar.club/bookings",
+    "method": "POST",
+    "resource_type": "xhr",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "x-csrf-token": "SDBpvbOtxd5IpwW8GChoB2JgDApEONla6RfRJutl",
+      "referer": "https://amazstar.club/products?country=es",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"HeadlessChrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/145.0.7632.6 Safari/537.36",
+      "accept": "*/*",
+      "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+    },
+    "post_data": "product_id=65504"
+  },
+  {
+    "kind": "req",
+    "url": "https://amazstar.club/getProducts",
+    "method": "POST",
+    "resource_type": "xhr",
+    "headers": {
+      "sec-ch-ua-platform": "\"Windows\"",
+      "x-csrf-token": "SDBpvbOtxd5IpwW8GChoB2JgDApEONla6RfRJutl",
+      "referer": "https://amazstar.club/products?country=es",
+      "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"HeadlessChrome\";v=\"145\", \"Chromium\";v=\"145\"",
+      "sec-ch-ua-mobile": "?0",
+      "x-requested-with": "XMLHttpRequest",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/145.0.7632.6 Safari/537.36",
+      "accept": "application/json, text/javascript, */*; q=0.01",
+      "content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+    },
+    "post_data": "draw=3&columns%5B0%5D%5Bdata%5D=0&columns%5B0%5D%5Bname%5D=col_state&columns%5B0%5D%5Bsearchable%5D=true&columns%5B0%5D%5Borderable%5D=false&columns%5B0%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B0%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B1%5D%5Bdata%5D=1&columns%5B1%5D%5Bname%5D=col_book_order&columns%5B1%5D%5Bsearchable%5D=true&columns%5B1%5D%5Borderable%5D=false&columns%5B1%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B1%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B2%5D%5Bdata%5D=2&columns%5B2%5D%5Bname%5D=col_id&columns%5B2%5D%5Bsearchable%5D=true&columns%5B2%5D%5Borderable%5D=true&columns%5B2%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B2%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B3%5D%5Bdata%5D=3&columns%5B3%5D%5Bname%5D=col_name&columns%5B3%5D%5Bsearchable%5D=true&columns%5B3%5D%5Borderable%5D=true&columns%5B3%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B3%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B4%5D%5Bdata%5D=4&columns%5B4%5D%5Bname%5D=col_image&columns%5B4%5D%5Bsearchable%5D=true&columns%5B4%5D%5Borderable%5D=false&columns%5B4%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B4%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B5%5D%5Bdata%5D=5&columns%5B5%5D%5Bname%5D=col_link&columns%5B5%5D%5Bsearchable%5D=true&columns%5B5%5D%5Borderable%5D=false&columns%5B5%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B5%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B6%5D%5Bdata%5D=6&columns%5B6%5D%5Bname%5D=col_seller_shop&columns%5B6%5D%5Bsearchable%5D=true&columns%5B6%5D%5Borderable%5D=true&columns%5B6%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B6%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B7%5D%5Bdata%5D=7&columns%5B7%5D%5Bname%5D=col_manager&columns%5B7%5D%5Bsearchable%5D=true&columns%5B7%5D%5Borderable%5D=true&columns%5B7%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B7%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B8%5D%5Bdata%5D=8&columns%5B8%5D%5Bname%5D=col_total&columns%5B8%5D%5Bsearchable%5D=true&columns%5B8%5D%5Borderable%5D=true&columns%5B8%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B8%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B9%5D%5Bdata%5D=9&columns%5B9%5D%5Bname%5D=col_daily&columns%5B9%5D%5Bsearchable%5D=true&columns%5B9%5D%5Borderable%5D=true&columns%5B9%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B9%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B10%5D%5Bdata%5D=10&columns%5B10%5D%5Bname%5D=col_available&columns%5B10%5D%5Bsearchable%5D=true&columns%5B10%5D%5Borderable%5D=false&columns%5B10%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B10%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B11%5D%5Bdata%5D=11&columns%5B11%5D%5Bname%5D=col_paypal_fee&columns%5B11%5D%5Bsearchable%5D=true&columns%5B11%5D%5Borderable%5D=true&columns%5B11%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B11%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B12%5D%5Bdata%5D=12&columns%5B12%5D%5Bname%5D=col_review_type&columns%5B12%5D%5Bsearchable%5D=true&columns%5B12%5D%5Borderable%5D=true&columns%5B12%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B12%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B13%5D%5Bdata%5D=13&columns%5B13%5D%5Bname%5D=col_feedback&columns%5B13%5D%5Bsearchable%5D=true&columns%5B13%5D%5Borderable%5D=true&columns%5B13%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B13%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B14%5D%5Bdata%5D=14&columns%5B14%5D%5Bname%5D=col_perc_refund&columns%5B14%5D%5Bsearchable%5D=true&columns%5B14%5D%5Borderable%5D=false&columns%5B14%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B14%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B15%5D%5Bdata%5D=15&columns%5B15%5D%5Bname%5D=col_note&columns%5B15%5D%5Bsearchable%5D=true&columns%5B15%5D%5Borderable%5D=true&columns%5B15%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B15%5D%5Bsearch%5D%5Bregex%5D=false&columns%5B16%5D%5Bdata%5D=16&columns%5B16%5D%5Bname%5D=col_agent_comm&columns%5B16%5D%5Bsearchable%5D=true&columns%5B16%5D%5Borderable%5D=false&columns%5B16%5D%5Bsearch%5D%5Bvalue%5D=&columns%5B16%5D%5Bsearch%5D%5Bregex%5D=false&order%5B0%5D%5Bcolumn%5D=2&order%5B0%5D%5Bdir%5D=desc&start=0&length=500&search%5Bvalue%5D=&search%5Bregex%5D=false&filter=&all_countries=false&country=es&seller_id="
+  },
+  {
+    "kind": "resp",
+    "url": "https://amazstar.club/bookings",
+    "status": 200,
+    "headers": {
+      "x-robots-tag": "noindex, nofollow",
+      "cache-control": "no-cache, private",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "zstd",
+      "cf-cache-status": "DYNAMIC",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=USA1MWAPtloqMDMYodvDc%2BqFAc4QZvLt1UcTM5aURx%2Fr3Bv%2BItpySPBKf5V0xTDgcsEfACCrLQcYxZVIZLkhjetn4D9xM8KX9C8QVBcsj8n%2F%2FKihMyHQTQat4j02FQh4\"}]}",
+      "cf-ray": "9e25eed8485ccfd3-MAD",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "date": "Thu, 26 Mar 2026 11:49:37 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "vary": "Accept-Encoding",
+      "server": "cloudflare"
+    },
+    "body_snippet": "{\"success\":true,\"msg\":\"You have 30 minutes from now to order the product \\\"Luregirl Auriculares in-ear\\\"!\"}"
+  },
+  {
+    "kind": "resp",
+    "url": "https://amazstar.club/getProducts",
+    "status": 200,
+    "headers": {
+      "x-robots-tag": "noindex, nofollow",
+      "cache-control": "no-cache, private",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "content-encoding": "zstd",
+      "cf-cache-status": "DYNAMIC",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=xQXatb8YQpPSlQ%2FTzjqH5psyEVZO8AT9IVRMqBUP5ItHr6rXdC%2ByhTwbLPnW71mfMJ8JC90rMW2ah7KffcZ7PQeJDZM5asqPzrzQKxGf0aGYcetdYpN3wtVvX1H7ISXU\"}]}",
+      "cf-ray": "9e25eedf880ccfd3-MAD",
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "date": "Thu, 26 Mar 2026 11:49:38 GMT",
+      "content-type": "text/html; charset=UTF-8",
+      "vary": "Accept-Encoding",
+      "server": "cloudflare"
+    },
+    "body_snippet": "{\"draw\":3,\"recordsTotal\":59,\"recordsFiltered\":59,\"data\":[[0,1,65504,\"Luregirl Auriculares in-ear\",\"\\/storage\\/product_images\\/B0GSVJ37CT_1774507815.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0GSVJ37CT\\/?tag=danyliss07-21\",\"farenkeji\",\"Dany\",1,2,1,1,\"Review\",\"no\",\"-\",\"\",1,0],[0,1,65500,\"Keywords: camara de video\",\"\\/storage\\/product_images\\/B0G8F34DSP_1774472137.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0G8F34DSP\\/?tag=danyliss07-21\",\"CAMWORLD Ufficiale ES\",\"Federica\",2,1,0,1,\"Review\",\"ask\",\"-\",\"No new account. No gift cards. REVIEW ONLY TEXT.\",1,0],[0,1,65499,\"pista coches flexible\",\"\\/storage\\/product_images\\/B0FSWLQSZW_1774472029.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0FSWLQSZW\\/?tag=danyliss07-21\",\"YIMASI-EU STORE\",\"Federica\",1,2,0,1,\"Review\",\"ask\",\"-\",\"No new account. No gift cards.\",1,0],[0,1,65485,\"Cordones de silicona para zapatos\",\"\\/storage\\/product_images\\/B0FZKKYHHF_1774377916.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0FZKKYHHF\\/?tag=danyliss07-21\",\"SIULEEYEUNGHOON\",\"Dany\",2,1,1,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65484,\"Cordones de silicona para zapatos\",\"\\/storage\\/product_images\\/B0FZKPQW9W_1774377911.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0FZKPQW9W\\/?tag=danyliss07-21\",\"SIULEEYEUNGHOON\",\"Dany\",2,1,1,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65479,\"repelente gatos ahuyentador para gatos\",\"\\/storage\\/product_images\\/B0FS1J4YZG_1774376954.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0FS1J4YZG\\/?tag=danyliss07-21\",\"\\\" LanZong-Mall\\\"\",\"Dany\",10,1,1,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65478,\"Repelente ultras\\u00f3nico de plagas para Interiores\",\"\\/storage\\/product_images\\/B0FS5PYDHM_1774376949.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0FS5PYDHM\\/?tag=danyliss07-21\",\"\\\" BaoBaiShop\\\"\",\"Dany\",10,1,1,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65477,\"repelente ultras\\u00f3nico de plagas\",\"\\/storage\\/product_images\\/B0G635JS73_1774376945.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0G635JS73\\/?tag=danyliss07-21\",\"LanZong-Mall\",\"Dany\",10,1,1,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65474,\"Lima de U\\u00f1as de Acero Inoxidable\",\"\\/storage\\/product_images\\/B0G1HLMTF8_1774375999.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0G1HLMTF8\\/?tag=danyliss07-21\",\"SOENANATURALSLTD\",\"Dany\",2,1,0,1,\"Review\",\"Ask\",\"-\",\"\",1,0],[0,1,65460,\"ONLY PURCHASE! Programador Riego Autom\\u00e1tico\",\"\\/storage\\/product_images\\/B0G3H3H4DX_1774374795.jpg\",\"https:\\/\\/www.amazon.es\\/dp\\/B0G3H3H4DX\\/?tag=danyliss07-21\",\"Muwei Trading Co., Ltd.\",\"Federica\",0,2,0,1,\"Purchase only\",\"-\",\"100%\",\"ONLY PURCHASE! send me photo when arrive the product. No giftcards.\",0.5,0],[0,1,6"
+  }
+]

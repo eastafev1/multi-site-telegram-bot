@@ -1,0 +1,25 @@
+{
+  "cookies": [
+    {
+      "name": "XSRF-TOKEN",
+      "value": "eyJpdiI6ImdyZEUxbDRIM1Y0TTZETStlWjhwY1E9PSIsInZhbHVlIjoidTBZS1c3Q0F6bDYrQWZUanlWNEc2RlIxTHlvQ2dnV3ptUnQxVm5vbjdxeHVkQW5yUVJncU9qeGpicjNMYWIxNnpLdGtWU0xJUm4xN0liRE5xdWxuSE1Gb1FlVFpaeUJreEljOXVUMnpNRVdCTktuYlVYNkxrZ0tFSzBUOVhRRVgiLCJtYWMiOiIwYmE5MWIzNWRkNjg2MjEzZWFlN2ZiMGM3ZmE5NzQzZDUxMGQzYzNhOTQ5NWI1MjE4N2RjZDRlMzk0MzdkZjk2IiwidGFnIjoiIn0%3D",
+      "domain": "nazar.gift",
+      "path": "/",
+      "expires": 1774527097.868798,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "nazar_session",
+      "value": "eyJpdiI6IkJaOXlGZVRXQm15R0J0UytSc2ZoZkE9PSIsInZhbHVlIjoicGZBendONkNySzY4UFZPVit0UVkxTGZFT2dOMGpUZXhOOGdoOW5GQ0x4aDFrWGsydXBkQUI1NUUxdVpITldWdGh2dHVUM1VyL0RiR3BXc1o5RENWNmZuUkxma3J1cFFJc05kaGpxclZkOXF1YnJiZDhiZk5lMFJrem1GN0krakQiLCJtYWMiOiIxYzllODVhMTY1NWUyOTEwODNlZTE3YmM4ZmE5NDNkZTgwOWFmNjMzZDg3YWZlYjEyZmZkZmRiM2UyNTczODU3IiwidGFnIjoiIn0%3D",
+      "domain": "nazar.gift",
+      "path": "/",
+      "expires": 1774527097.868868,
+      "httpOnly": true,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}
